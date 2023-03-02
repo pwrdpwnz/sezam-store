@@ -33,6 +33,7 @@
             <a href="#">Главная</a>
             <a href="#">Главная</a>
           </div>
+          <Social />
         </div>
       </nav>
     </div>
@@ -95,6 +96,7 @@
   width: 100%;
   height: 100%;
   background-color: #fff;
+  color: #000;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
 
@@ -128,7 +130,10 @@
 
 
 <script lang="ts">
+import Social from "@/components/social/Social.vue";
+
 export default {
+  components: {Social},
   data() {
     return {
       isActive: false,
